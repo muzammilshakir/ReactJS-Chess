@@ -1139,6 +1139,36 @@ class Board extends React.Component {
                 )}
               </div>
 
+              {/* <div className="button_wrapper">
+                <button
+                  className="reset_button history"
+                  onClick={() => this.viewHistory("back_atw")}
+                >
+                  <p className="button_font">&lt;&lt;</p>
+                </button>
+                <button
+                  className="reset_button history"
+                  onClick={() => this.viewHistory("back")}
+                >
+                  <p className="button_font">&lt;</p>
+                </button>
+                <button className="reset_button" onClick={() => this.reset()}>
+                  <p className="button_font">Restart Game</p>
+                </button>
+                <button
+                  className="reset_button history"
+                  onClick={() => this.viewHistory("next")}
+                >
+                  <p className="button_font">&gt;</p>
+                </button>
+                <button
+                  className="reset_button history"
+                  onClick={() => this.viewHistory("next_atw")}
+                >
+                  <p className="button_font">&gt;&gt;</p>
+                </button>
+              </div> */}
+
               <div className="mate_wrapper">
                 <p className="small_font">
                   {this.in_check("w", this.state.squares) &&
