@@ -795,7 +795,6 @@ class Board extends React.Component {
 
   // handle user action of clicking square on board
   handleClick(i) {
-    console.log(i) ;
     let copy_squares = this.state.squares.slice();
 
     if (this.state.history_num - 1 != this.state.turn_num) {
