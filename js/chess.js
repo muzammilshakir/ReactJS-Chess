@@ -1063,9 +1063,12 @@ class Board extends React.Component {
           <div className="left_screen bounceInDown">
             <div className="side_box">
               <div className="content">
-                <p className="header_font">Chess - Single Player</p>
+                <p className="header_font">ReactJS Chess</p>
                 <p className="medium_font">
                   Play against our friendly bot!&nbsp;&nbsp;
+                  <a href="./how_to_play.html" target="_blank">
+                    How to Play
+                  </a>
                 </p>
               </div>
             </div>
@@ -1098,7 +1101,7 @@ class Board extends React.Component {
                 )}
               </div>
 
-              {/* <div className="button_wrapper">
+              <div className="button_wrapper">
                 <button
                   className="reset_button history"
                   onClick={() => this.viewHistory("back_atw")}
@@ -1126,7 +1129,7 @@ class Board extends React.Component {
                 >
                   <p className="button_font">&gt;&gt;</p>
                 </button>
-              </div> */}
+              </div>
 
               <div className="mate_wrapper">
                 <p className="small_font">
