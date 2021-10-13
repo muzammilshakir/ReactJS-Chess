@@ -58,7 +58,6 @@ class Board extends React.Component {
       check_flash: false,
       viewing_history: false,
       just_clicked: false,
-      difficulty: 1
     };
   }
 
@@ -900,10 +899,6 @@ class Board extends React.Component {
     }
   }
 
-  handleDifficulty(difficulty) {
-    this.setState({difficulty: difficulty}) ;
-  }
-
   // Render the page
   render() {
     const row_nums = [];
@@ -1097,41 +1092,6 @@ class Board extends React.Component {
                   <div className="highlight_box transparent"></div>
                 )}
                 {this.state.turn == "b" ? (
-                  <div className="highlight_box"></div>
-                ) : (
-                  <div className="highlight_box transparent"></div>
-                )}
-              </div>
-
-              <div className="wrapper">
-                <div className="player_box">
-                  <span onClick = {() => this.handleDifficulty(1)}>
-                    <p className="medium_font">Easy</p>
-                  </span>
-                </div>
-                <div className="player_box black_player_color">
-                  <span onClick = {() => this.handleDifficulty(2)}>
-                    <p className="medium_font">Medium</p>
-                  </span>
-                </div>
-                <div className="player_box">
-                  <span onClick = {() => this.handleDifficulty(3)}>
-                    <p className="medium_font">Hard</p>
-                  </span>
-                </div>
-              </div>
-              <div className="wrapper">
-                {this.state.difficulty == 1 ? (
-                  <div className="highlight_box"></div>
-                ) : (
-                  <div className="highlight_box transparent"></div>
-                )}
-                {this.state.difficulty == 2 ? (
-                  <div className="highlight_box"></div>
-                ) : (
-                  <div className="highlight_box transparent"></div>
-                )}
-                {this.state.difficulty == 3 ? (
                   <div className="highlight_box"></div>
                 ) : (
                   <div className="highlight_box transparent"></div>
